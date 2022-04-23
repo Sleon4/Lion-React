@@ -21,7 +21,7 @@ export default function Login() {
 		}).then(response => {
 			if(response.data.status === 'success') {
 				console.log(response.data);
-				// window.sessionStorage.setItem('jwt', response.data.data.jwt);
+				window.sessionStorage.setItem('jwt', response.data.data.jwt);
 			} else {
 				console.log(response.data);
 			}
@@ -37,7 +37,7 @@ export default function Login() {
 							<Grid item xs={12}>
 								<FormControl fullWidth variant="filled">
 									<InputLabel>Correo</InputLabel>
-									<FilledInput type="email" required onInput={e => setUsers_email(e.target.value)} startAdornment={
+									<FilledInput type="email" onInput={e => setUsers_email(e.target.value)} startAdornment={
 										<InputAdornment position="start"><AlternateEmailIcon fontSize="small" /></InputAdornment>
 									} />
 								</FormControl>
@@ -46,7 +46,7 @@ export default function Login() {
 							<Grid item xs={12}>
 								<FormControl fullWidth variant="filled">
 									<InputLabel>Contraseña</InputLabel>
-									<FilledInput type="password" required onInput={e => setUsers_password(e.target.value)} startAdornment={
+									<FilledInput type="password" onInput={e => setUsers_password(e.target.value)} startAdornment={
 										<InputAdornment position="start"><PasswordIcon fontSize="small" /></InputAdornment>
 									} />
 								</FormControl>

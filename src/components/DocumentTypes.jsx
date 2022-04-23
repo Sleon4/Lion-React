@@ -5,7 +5,7 @@ export default function DocumentTypes() {
     const [documents, setDocuments] = useState([]);
 
     useEffect(() => {
-        get('read-document-types').then(response => {
+        get('api/read-document-types').then(response => {
             setDocuments(response.data);
         });
     }, [setDocuments]);

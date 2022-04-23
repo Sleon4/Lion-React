@@ -15,7 +15,7 @@ export default function HomeAdministrator() {
         <Container>
             <Grid container my={3}>
                 <form onSubmit={handleSubmit}>
-                    <Button type="submit" variant="contained">Send</Button>
+                    <Button type="submit" variant="contained">ENVIAR DATOS</Button>
                 </form>
             </Grid>
         </Container>

@@ -5,7 +5,7 @@ export default function axiosBase() {
     const index = false;
     
     return axios.create({
-        baseURL: !index ? 'http://localhost/Lion-Framework/Lion-PHP/api/' : 'https://leon.tecnologiayproductividad.com/'
+        baseURL: !index ? 'http://localhost/Github/' : ''
     });
 }
 
